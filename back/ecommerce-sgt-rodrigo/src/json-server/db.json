@@ -1,0 +1,170 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "password": "password123",
+      "address": "123 Main St, Anytown, USA",
+      "phone": "123-456-7890",
+      "role": "Customer"
+    },
+    {
+      "name": "Emma Smith",
+      "email": "Emma.smith@example.com",
+      "password": "password321",
+      "address": "456 Elm St, Othertown, USA",
+      "phone": "098-765-4321",
+      "id": "2"
+    }
+  ],
+  "categories": [
+    {
+      "categoryID": 1,
+      "name": "Electronics",
+      "description": "Electronic devices and accessories",
+      "id": "5c4c"
+    },
+    {
+      "categoryID": 2,
+      "name": "Books",
+      "description": "Books of various genres",
+      "id": "3001"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Smartphone",
+      "description": "A latest model smartphone",
+      "price": 99.99,
+      "stock": 50,
+      "categoryID": 1,
+      "imageURL": "http://example.com/smartphone.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Laptop",
+      "description": "A high-performance laptop",
+      "price": 999.99,
+      "stock": 30,
+      "categoryID": 1,
+      "imageURL": "http://example.com/laptop.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Keyboard",
+      "description": "A gripping mystery novel",
+      "price": 25.99,
+      "stock": 100,
+      "categoryID": 5,
+      "imageURL": "http://example.com/novel.jpg"
+    },
+    {
+      "id": "9046",
+      "name": "Headphones",
+      "description": "A latest model smartphone",
+      "price": 1000,
+      "stock": 20,
+      "categoryID": 3,
+      "imageURL": "http://example.com/headphone.jpg"
+    },
+    {
+      "id": "d87b",
+      "name": "Mate",
+      "description": "A latest model smartphone",
+      "price": 2000,
+      "stock": 30,
+      "categoryID": 4,
+      "imageURL": "http://example.com/tablet.jpg"
+    }
+  ],
+  "orders": [
+    {
+      "orderID": 1,
+      "userID": 1,
+      "orderDate": "2023-05-01",
+      "status": "Processing",
+      "totalAmount": 714.98,
+      "id": "0daa"
+    },
+    {
+      "orderID": 2,
+      "userID": 2,
+      "orderDate": "2023-05-03",
+      "status": "Shipped",
+      "totalAmount": 999.99,
+      "id": "ecca"
+    }
+  ],
+  "orderItems": [
+    {
+      "orderItemID": 1,
+      "orderID": 1,
+      "productID": 1,
+      "quantity": 1,
+      "price": 699.99,
+      "id": "dd75"
+    },
+    {
+      "orderItemID": 2,
+      "orderID": 1,
+      "productID": 3,
+      "quantity": 1,
+      "price": 14.99,
+      "id": "62f8"
+    },
+    {
+      "orderItemID": 3,
+      "orderID": 2,
+      "productID": 2,
+      "quantity": 1,
+      "price": 999.99,
+      "id": "c2ee"
+    }
+  ],
+  "carts": [
+    {
+      "cartID": 1,
+      "userID": 1,
+      "createdDate": "2023-05-01",
+      "id": "20c0"
+    }
+  ],
+  "cartItems": [
+    {
+      "cartItemID": 1,
+      "cartID": 1,
+      "productID": 2,
+      "quantity": 1,
+      "id": "b524"
+    },
+    {
+      "cartItemID": 2,
+      "cartID": 1,
+      "productID": 3,
+      "quantity": 2,
+      "id": "6b3c"
+    }
+  ],
+  "reviews": [
+    {
+      "reviewID": 1,
+      "productID": 1,
+      "userID": 1,
+      "rating": 5,
+      "comment": "Great smartphone!",
+      "reviewDate": "2023-05-02",
+      "id": "a1d8"
+    },
+    {
+      "reviewID": 2,
+      "productID": 3,
+      "userID": 2,
+      "rating": 4,
+      "comment": "Interesting read.",
+      "reviewDate": "2023-05-04",
+      "id": "be19"
+    }
+  ]
+}
