@@ -29,3 +29,4 @@ jobs:
         file: back/ecommerce-sgt-rodrigo/Dockerfile
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME}}/nest-app:latest
+        
