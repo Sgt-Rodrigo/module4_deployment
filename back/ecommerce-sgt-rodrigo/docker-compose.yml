@@ -3,6 +3,8 @@ services:
     image: rodraven/nest-app:latest
     ports:
       - "3001:3000"
+    env_file:
+      - .env.production
     environment:
       DB_NAME: ${POSTGRES_DB}
       DB_HOST: postgresdb
@@ -16,6 +18,8 @@ services:
     image: postgres
     volumes:
       - pgdata:/var/lib/postgresql/data
+    env_file:
+      - .env.production
     environment:
       POSTGRES_DB: ${DB_NAME}
       POSTGRES_USER: ${DB_USERNAME}
