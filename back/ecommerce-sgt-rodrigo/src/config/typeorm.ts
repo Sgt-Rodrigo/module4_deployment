@@ -15,14 +15,14 @@
 // dotenvConfig({ path: `.env.${env}` });
   
 
-
+//! here I replaced all dev envs for the explicit prod env vars
   const config: TypeOrmModuleOptions = {
     type: 'postgres',
-    database: process.env.DB_NAME || 'default_db',
+    database: process.env.POSTGRES_DB || 'default_db',
     host: process.env.DB_HOST || 'localhost',
     port: process.env.DB_PORT as number | undefined,
-    username: process.env.DB_USERNAME || 'postgres',
-    password: process.env.DB_PASSWORD || 'password',
+    username: process.env.POSTGRES_USER || 'postgres',
+    password: process.env.POSTGRES_PASSWORD || 'password',
     autoLoadEntities: true,
     //w false for production and migrations
     synchronize: false,
