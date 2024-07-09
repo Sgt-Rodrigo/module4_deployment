@@ -60,8 +60,12 @@ export class UsersRepo{
       try {
         const user = await this.usersRepository.findOne({where: {id}});
         if(!user) throw new NotFoundException('User was not found')
+
+          //w excluded password
+          const {password, ...userWithNoPassword} = user;
+
         
-        return user
+        return userWithNoPassword
       } catch (error) {
         if(error instanceof NotFoundException) {
           throw error
